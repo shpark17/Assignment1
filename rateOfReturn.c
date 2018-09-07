@@ -9,7 +9,7 @@
 
 int main(int argc, char **argv){
   
-  double InitialValue, FinalValue, Time, Years, Months, Weeks, Days;
+  double InitialValue, FinalValue, Time, Years, Weeks, Days;
   
   printf("Enter the initial value of investments: ");
   scanf("%lf", &InitialValue);
@@ -29,7 +29,7 @@ int main(int argc, char **argv){
   printf("Enter the days: ");
   scanf("%lf", &Days);
   
-  Time = Years + (Months/12) + (Weeks/52) + (Days/365);
+  Time = Years + (7*Weeks)/365 + (Days/365);
   double AnnualizedRateOfReturn = (pow((FinalValue/InitialValue), (1/Time)) - 1)*100;
     
   printf("Initial Value: %f\n Final Value: %f\n Years: %f\n Annaulized rate of return: %f%\n", InitialValue, FinalValue, Time, AnnualizedRateOfReturn);
