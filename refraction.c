@@ -18,9 +18,11 @@ int main(int argc, char **argv) {
   
   if(AngleOfIncidence<180 || AngleOfIncidence>180) {
     printf("Invalid angle (must be [-180, 180])");
+    return 0;
   }  
   if(RefractionOfTheMedium<0) {
     printf("hough theoretically possible, we don't accept indexes < 1");
+    return 0;
   }
   double AngleOfRefraction, AngleOfIncidenceR, AngleOfRefractionD;
     
