@@ -13,18 +13,23 @@ int main(int argc, char **argv){
   
   printf("Enter the initial value of investments: ");
   scanf("%lf", &InitialValue);
+  printf("\n");
   
   printf("Enter the final value of investments: ");
   scanf("%lf", &FinalValue);
+  printf("\n");
   
   printf("Enter the years: ");
   scanf("%lf", &Years);
+  printf("\n");
   
   printf("Enter the weeks: ");
   scanf("%lf", &Weeks);
+  printf("\n");
   
   printf("Enter the days: ");
   scanf("%lf", &Days);
+  printf("\n");
   
   Time = Years + (7*Weeks)/365 + (Days/365);
   double AnnualizedRateOfReturn = (pow((FinalValue/InitialValue), (1/Time)) - 1)*100;
