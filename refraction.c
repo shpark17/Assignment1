@@ -20,6 +20,6 @@ int main(int argc, char **argv) {
   
   AngleOfRefraction = asin(RefractionOfTheMedium*sin(AngleOfIncidence));
     
-  printf("Angle of incidence: %f, %f\n Index of Refraction: %f, %f\n Angle of refraction: %f,\n", AngleOfIncidence, RefractionOfTheMedium, AngleOfRefraction);
+  printf("Angle of incidence: %f\n Index of Refraction: %f\n Angle of refraction: %f\n", AngleOfIncidence, RefractionOfTheMedium, AngleOfRefraction);
 return 0;
 }
