@@ -22,7 +22,7 @@ int main(int argc, char **argv){
   
   double AnnualizedRateOfReturn = pow((FinalValue/InitialValue), (1/Time));
     
-  printf("Initial Value: %f\n Final Value: %f\n Years: %f\n Annaulized rate of return: %f\n", InitialValue, FinalValue, TIme, AnnualizedRateOfReturn);
+  printf("Initial Value: %f\n Final Value: %f\n Years: %f\n Annaulized rate of return: %f\n", InitialValue, FinalValue, Time, AnnualizedRateOfReturn);
 return 0;
 }  
   
