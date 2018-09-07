@@ -20,7 +20,7 @@ int main(int argc, char **argv){
   printf("Enter the years: ");
   scanf("%lf", &Time);
   
-  double AnnualizedRateOfReturn = pow((FinalValue/InitialValue), (1/Time)) - 1;
+  double AnnualizedRateOfReturn = (pow((FinalValue/InitialValue), (1/Time)) - 1)*100;
     
   printf("Initial Value: %f\n Final Value: %f\n Years: %f\n Annaulized rate of return: %f\n", InitialValue, FinalValue, Time, AnnualizedRateOfReturn);
 return 0;
