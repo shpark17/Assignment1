@@ -19,7 +19,7 @@ int main(int argc, char **argv) {
   double AngleOfRefraction, AngleOfIncidenceR, AngleOfRefractionD;
     
   AngleOfIncidenceR = (AngleOfIncidence/180)*M_PI;
-  AngleOfRefraction = asin(sin(AngleOfIncidenceR)/(RefractionOfTheMedium);
+  AngleOfRefraction = asin(sin(AngleOfIncidenceR)/(RefractionOfTheMedium));
   AngleOfRefractionD = (AngleOfRefraction*180)/(M_PI);
   
   printf("Angle of incidence: %f\n Index of Refraction: %f\n Angle of refraction: %f\n", AngleOfIncidence, RefractionOfTheMedium, AngleOfRefractionD);
