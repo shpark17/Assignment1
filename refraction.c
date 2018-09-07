@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
   printf("Enter the Value of index of refraction of the medium: ");
   scanf("%lf", &RefractionOfTheMedium);
   
-  if(AngleOfIncidence<180 || AngleOfIncidence>180) {
+  if(AngleOfIncidence<-180 || AngleOfIncidence>180) {
     printf("Invalid angle (must be [-180, 180])");
     return 0;
   }  
