@@ -29,7 +29,7 @@ int main(int argc, char **argv){
   printf("Enter the days: ");
   scanf("%lf", &Days);
   
-  Time = Years + (Months/12) + (Weeks/52.1429) + (Days/365);
+  Time = Years + (Months/12) + (Weeks/52) + (Days/365);
   double AnnualizedRateOfReturn = (pow((FinalValue/InitialValue), (1/Time)) - 1)*100;
     
   printf("Initial Value: %f\n Final Value: %f\n Years: %f\n Annaulized rate of return: %f%\n", InitialValue, FinalValue, Time, AnnualizedRateOfReturn);
