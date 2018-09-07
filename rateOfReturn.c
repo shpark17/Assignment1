@@ -20,9 +20,6 @@ int main(int argc, char **argv){
   printf("Enter the years: ");
   scanf("%lf", &Years);
   
-  printf("Enter the months: ");
-  scanf("%lf", &Months);
-  
   printf("Enter the weeks: ");
   scanf("%lf", &Weeks);
   
