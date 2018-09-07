@@ -16,9 +16,10 @@ int main(int argc, char **argv) {
   printf("Enter the Value of index of refraction of the medium: ");
   scanf("%lf", &RefractionOfTheMedium);
   
-  double AngleOfRefraction;
+  double AngleOfRefraction, AngleOfIncidenceR;
   
-  AngleOfRefraction = asin(RefractionOfTheMedium*sin(AngleOfIncidence));
+  AngleOfIncidenceR = (AngleOfIncidence/180)*M_PI;  
+  AngleOfRefraction = asin(RefractionOfTheMedium*sin(AngleOfIncidenceR));
     
   printf("Angle of incidence: %f\n Index of Refraction: %f\n Angle of refraction: %f\n", AngleOfIncidence, RefractionOfTheMedium, AngleOfRefraction);
 return 0;
